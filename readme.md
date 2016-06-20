@@ -10,8 +10,7 @@ Each `Member` is also either a `Student` or an `Instructor`.
 * Each student has a `reason` for attending Codebar (e.g., "I've always wanted to make websites!").
 * Each instructor a `bio` (e.g., "I've been coding in Ruby for 5 years and want to share the love!").
 * Each instructor also has a set of `skills` (e.g., `["Ruby", "Javascript", "C++"]`).
-
-Additionally, each Student also has an about attribute with information about why they want to learn programming, and each Coach has a bio and skills.
+* An instructor can gain a new skill using `add_skill`.
 
 ## Part II: Workshops
 
@@ -26,6 +25,8 @@ Create an `add_participant` method that accepts a member attribute. If the Membe
 > Hint: look into Ruby's `.class` method.
 
 Create another method `print_details` that outputs the details of the workshop.
+
+> Hint: look into `.each_with_index`.
 
 ## Test Your Code
 
@@ -48,13 +49,13 @@ workshop.add_participant(vicky)
 workshop.add_participant(nicole)
 workshop.print_details
 # =>
-# Workshop - 12/03/2014 - Venue: Shutl
+# Workshop - 12/03/2014 - Classroom: CR6
 #
 # Students
 # 1. Jane Doe - I am trying to learn programming and need some help
 # 2. Lena Smith - I am really excited about learning to program!
 #
-# Coaches
+# Instructors
 # 1. Vicky Ruby - HTML, JavaScript
 #    I want to help people learn coding.
 # 2. Nicole McMillan - Ruby
